@@ -1,0 +1,37 @@
+<nodes>
+    <node id = "1">
+        <to>2</to>
+        <command> echo "hello world 1"</command>
+    </node>
+    <node id = "2" >
+        <from>1</from>
+        <to>3</to>
+        <command>echo "hello world 2"</command>
+    </node>
+    <node id ="3" >
+        <from>2</from>
+        <to>4</to>
+        <to>5</to>
+        <command>echo "hello world 3"</command>
+    </node>
+    <node id ="4" >
+        <from>3</from>
+        <to>6</to>
+        <command>echo "hello world 4"</command>
+    </node>
+    <node id ="5" >
+        <from>3</from>
+        <to>6</to>
+        <command>echo "hello world 5"</command>
+    </node>
+    <node id ="6" >
+        <from>4</from>
+        <from>5</from>
+        <to>7</to>
+        <command>echo "hello world 6"</command>
+    </node>
+    <node id ="7" >
+        <from>6</from>
+        <command>echo "hello world 7"</command>
+    </node>
+</nodes>

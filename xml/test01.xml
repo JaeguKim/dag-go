@@ -1,0 +1,15 @@
+<nodes>
+    <node id = "1">
+        <to>2</to>
+        <command>echo "hello world 1"</command>
+    </node>
+    <node id = "2" >
+        <from>1</from>
+        <to>3</to>
+        <command>echo "hello world 2"</command>
+    </node>
+    <node id ="3" >
+        <from>2</from>
+        <command>echo "hello world 3"</command>
+    </node>
+</nodes>
